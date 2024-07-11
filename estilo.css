@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*me permite deslizar cuando hago click*/
+    scroll-behavior: smooth;
+ }
+ /*MENU*/
+ .contenedor-header{
+    background: #2D129D;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+ }
+ .contenedor-header header{
+    max-width: 1100px ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color:  #5A8DFF ;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav li a:hover{
+    color: #5A8DFF;
+}
+.nav-responsive{
+    background-color: #2D129D;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/*SECCION INICIO*/
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,.1)),
+    url(programador-oficina-trabajando-fondo-pantalla-computadora-imagen-generada-ia_210643-11199.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenedor-banner{
+    background-color: #2D129D;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenedor-banner img{
+    margin-top: 40px;
+    border: 10px solid  #5A8DFF;
+    display: block;
+    width: 75%;
+    margin:auto;
+    border-radius: 100%;
+}
+.inicio .contenedor-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenedor-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenedor-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #FFF;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+    
+}
+.inicio .contenedor-banner .redes a:hover{
+    background-color: #5A8DFF;
+}
+
+/*sobre mi*/
+.sobremi{
+    background-color: #2D129D;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #5A8DFF;
+    font-weight: bold;
+}
+
+    
+
+
+.skills{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous';
+
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    background: #2D129D;
+}
+.skills h2{
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 40px 80px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+.scroll{
+    position: relative;
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
+}
+.scroll div{
+    white-space: nowrap;
+    animation: animate var(--t) linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+.scroll div span{
+    display: inline-flex;
+    margin: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: #5A8DFF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.scroll div span:hover{
+    background: #12299d;
+    cursor: pointer;
+}
+.imgbx img{
+    max-width: 50px;
+    scale: 0.8; 
+    filter: grayscale(1);
+}
+.imgbx img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+
+
+.col{
+    background-color: #2D129D;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    min-height: 15vh;
+    padding: 40px 80px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col h3{
+    color: #FFF;
+     text-align: start;
+     justify-content: flex-start;
+    font-size: 48px;
+    font-family: 'Righteous';
+    padding: 20px ;
+}
+.intereses{
+    justify-content: center;
+    color: #FFF;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #5A8DFF;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 40px;
+    transition: 3s;
+}
+
+.formacion{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    
+    
+}
+.formacion h3{
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+   font-size: 48px;
+   font-family: 'Righteous';
+   padding: 0 20px 30px 0 ;
+
+}
+.contenedor-escuelas{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 0 0 1px 1px;
+    align-items: center;
+    
+}
+
+
+.escuelas{
+    width: 100%;
+    padding: 0 5em;   
+    font-family: 'Righteous';
+    font-size: 20px;
+    align-items: center;
+    display:column;
+    text-align:center;
+    justify-content: center;
+
+}
+.proyectos{
+    width: 100%;
+    background-color: #2D129D;
+    padding: 10 5em;   
+    font-family: 'Righteous';
+    font-size: 20px;
+    text-align:center;
+    
+
+
+}
+.proyectos h3{
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+   font-size: 48px;
+   font-family: 'Righteous';
+   padding: 0 20px 30px 0 ;
+}
+.barberia{
+    display:inline-block; 
+    background-color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    width:30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.barberia button{
+    display: inline;
+    width: 100px;
+    background-color: #2D129D;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.barberia button :hover{
+    color: #5A8DFF;
+}
+
+.contacto {
+    background-color:#2D129D;
+    padding: 3rem;
+}
+
+.contacto__h2 {
+    text-align: center;
+    font-family: 'Righteous' ;
+    padding-bottom: 3rem;
+    font-size: 48px;
+    color: #FFF;
+}
+
+.contenedor__contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 55vh;
+}
+
+.input {
+    width: 500px;
+    height: 2rem;
+    font-size: 15px;
+    text-align: center;
+    color: #FFF;
+    border-color: #5A8DFF 3px solid;
+    border-radius: 10px;
+}
+
+.textarea {
+    width: 500px;
+    height: 10rem;
+    font-size:15px;
+    border-color: #5A8DFF 3px solid;
+    border-radius: 10px;
+}
+
+.contacto__boton {
+    padding: 1rem 3rem;
+    border:  3px solid;
+    font-size: 1.3rem;
+    background-color:#5A8DFF;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contacto__boton:hover {
+    transform: scale(1.1);
+    color: #2D129D;
+}
+
+.footer {
+    background-color: #2D129D;
+    color: #FFF;
+    font-family: 'Righteous' ;
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+    
+
+@media screen and (max-width: 600px) {
+    .contacto__h2 {
+        font-size: 3rem;
+    }
+
+    .input {
+        width: 300px;
+    }
+
+    .textarea {
+        width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
